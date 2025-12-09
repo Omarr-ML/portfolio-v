@@ -86,7 +86,7 @@ export const PROJECTS: Project[] = [
       "Achieved <$0.10 cost per lesson via token optimization.",
       "Production deployment handling concurrent user requests with zero downtime."
     ],
-    imageUrl: "./structural-learning.png"
+    imageUrl: "/structural-learning.png"
   },
   {
     id: "id-fraud-detection",
@@ -112,7 +112,7 @@ export const PROJECTS: Project[] = [
       "Robust detection of screen-replay attacks and printed copies.",
       "Successfully containerized complex mixed-framework (TF + PyTorch) environment."
     ],
-    imageUrl: "./id-fraud-detection.png"
+    imageUrl: "/id-fraud-detection.png"
   },
   {
     id: "convirza-ai",
@@ -138,7 +138,7 @@ export const PROJECTS: Project[] = [
       "Improved sentiment analysis accuracy to ~90%.",
       "Enabled clients to increase sales revenue by automated lead scoring."
     ],
-    imageUrl: "./convirza-ai.png"
+    imageUrl: "/convirza-ai.png"
   },
   {
     id: "startup-ideation",
@@ -164,7 +164,7 @@ export const PROJECTS: Project[] = [
       "Provides data-backed market size and competition analysis.",
       "Fully automated research workflow replacing weeks of manual work."
     ],
-    imageUrl: "./startup-ideation.png"
+    imageUrl: "/startup-ideation.png"
   },
   {
     id: "real-estate-sms",
@@ -190,6 +190,6 @@ export const PROJECTS: Project[] = [
       "Seamless CRM integration reducing manual data entry.",
       "High-engagement conversational agent that mimics human realtors."
     ],
-    imageUrl: "./real-estate-sms.png"
+    imageUrl: "/real-estate-sms.png"
   }
 ];
