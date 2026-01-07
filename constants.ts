@@ -191,5 +191,110 @@ export const PROJECTS: Project[] = [
       "High-engagement conversational agent that mimics human realtors."
     ],
     imageUrl: "/real-estate-sms.png"
+  },
+  {
+    id: "podcast-intelligence",
+    title: "AI Podcast Content Repurposing Engine",
+    role: "Lead Automation Engineer",
+    shortDescription: "An automated pipeline that transforms YouTube podcasts into ready-to-publish social media content.",
+    fullDescription: "Designed and built an end-to-end content repurposing system that automates the entire lifecycle from podcast discovery to social media publication. The workflow identifies relevant AI-themed podcasts on YouTube, extracts video transcripts, and leverages generative AI to brainstorm content ideas and draft engaging copy. It integrates seamlessly with Slack for human-in-the-loop approvals at key stages, creating a scalable and efficient content engine for marketing teams.",
+    tags: ["Content Automation", "Generative AI", "AI Agents", "Social Media"],
+    techStack: ["n8n", "OpenAI GPT-4", "Slack API", "YouTube API", "Webhooks", "LinkedIn API"],
+    features: [
+      "Automated fetching of AI-related podcast videos from YouTube.",
+      "AI-powered transcription and content idea generation.",
+      "Multi-stage approval workflow managed entirely within Slack.",
+      "Generates tailored hooks and full LinkedIn posts based on approved ideas.",
+      "End-to-end automation from content analysis to final social media publishing."
+    ],
+    challenges: [
+      "Orchestrating a complex, multi-step workflow with human approval gates without breaking the automation flow.",
+      "Ensuring the AI-generated content ideas were novel and relevant to the source material.",
+      "Maintaining context and consistency from the initial transcript through to the final LinkedIn post."
+    ],
+    results: [
+      "Automated 90% of the content creation pipeline, from ideation to final draft.",
+      "Enabled the creation of a consistent social media content schedule with minimal manual effort.",
+      "Significantly reduced the time required to repurpose a single podcast episode into multiple social media assets."
+    ],
+    imageUrl: "/podcast_intelligence.png"
+  },
+  {
+    id: "multi-platform-job-scraper",
+    title: "Multi-Platform Job Aggregation Pipeline",
+    role: "Automation & Data Engineer",
+    shortDescription: "A robust automation pipeline that scrapes, normalizes, and consolidates job listings from major platforms.",
+    fullDescription: "Engineered a sophisticated data aggregation pipeline to scrape job listings from diverse platforms like LinkedIn, Indeed, and Glassdoor. The system was designed with modular flows to dynamically handle different website structures, pagination, and anti-scraping measures. It parses and normalizes key data fields—such as job title, company, and location—before consolidating them into a single, structured CSV, creating a powerful, unified data source for market analysis and lead generation.",
+    tags: ["Web Scraping", "Data Engineering", "Automation", "Lead Generation"],
+    techStack: ["n8n", "Apify", "RapidAPI", "Google Sheets", "Webhooks", "Data Normalization"],
+    features: [
+      "Modular scraper design to handle unique structures of LinkedIn, Indeed, Glassdoor, etc.",
+      "Dynamic handling of search criteria and pagination for targeted scraping.",
+      "Automated data parsing, cleaning, and normalization into a standardized format.",
+      "Robust error handling, logging, and scheduled execution for reliable, continuous operation."
+    ],
+    challenges: [
+      "Bypassing anti-scraping mechanisms and handling dynamic JavaScript-rendered content.",
+      "Designing a flexible parsing logic to extract consistent data from inconsistent HTML structures across platforms.",
+      "Ensuring data integrity and preventing duplicates when aggregating from multiple sources."
+    ],
+    results: [
+      "Created a unified data pipeline that eliminated hours of manual job sourcing.",
+      "Aggregated thousands of job listings into a clean, analysis-ready dataset.",
+      "Provided a high-volume data source for lead generation and competitive research."
+    ],
+    imageUrl: "/linkedin_multi_job_scraper.png"
+  },
+  {
+    id: "recruitment-automation",
+    title: "AI-Powered Recruitment Outreach Automation",
+    role: "Lead Automation Architect",
+    shortDescription: "An end-to-end system that scrapes jobs, enriches contacts, and sends personalized outreach emails.",
+    fullDescription: "Built a comprehensive recruitment automation engine that streamlines the entire candidate outreach workflow. The system scrapes and filters relevant job listings from multiple boards, extracts key decision-maker contacts using Apollo.io, and leverages ChatGPT to generate highly personalized outreach emails. With integrated controls for manual approval, this solution dramatically reduces manual effort while ensuring high-quality, targeted communication.",
+    tags: ["Recruitment", "Automation", "AI Agents", "Lead Generation"],
+    techStack: ["Make.com", "Apify", "Apollo.io", "ChatGPT", "Google Sheets", "Elastic Email", "Data Scraping"],
+    features: [
+      "Automated job scraping with intelligent filtering to match candidate profiles.",
+      "Integration with Apollo.io for accurate contact enrichment and decision-maker identification.",
+      "ChatGPT-powered personalization for generating unique, context-aware email copy.",
+      "Human-in-the-loop approval stage before dispatching outreach emails."
+    ],
+    challenges: [
+      "Integrating multiple APIs (Apify, Apollo, OpenAI) into a single, cohesive workflow in Make.com.",
+      "Developing a reliable logic for identifying the correct hiring manager from a list of company contacts.",
+      "Crafting ChatGPT prompts that consistently produce high-quality, non-generic email outreach copy."
+    ],
+    results: [
+      "Reduced manual workflow time for recruitment outreach by 80%.",
+      "Increased job-to-candidate relevancy to approximately 90% through intelligent filtering.",
+      "Delivered a scalable system capable of managing high-volume, personalized outreach campaigns."
+    ],
+    imageUrl: "/linkedin_outreach.png"
+  },
+  {
+    id: "conversational-voice-agent",
+    title: "Real Estate AI Voice Agent for Lead Qualification & Booking",
+    role: "Conversational AI Engineer",
+    shortDescription: "A sophisticated voice AI that autonomously calls, qualifies, and books appointments with real estate leads.",
+    fullDescription: "Developed an advanced conversational voice agent designed to automate top-of-funnel tasks for real estate businesses. The AI agent initiates outbound calls to potential leads, engages them in a natural, multi-turn conversation to gather detailed property information, and qualifies their interest. It then seamlessly transitions to scheduling an appointment by checking a live calendar for availability and confirming the booking, providing a complete, end-to-end automated solution.",
+    tags: ["Voice AI", "Conversational AI", "Automation", "Real Estate"],
+    techStack: ["Synthflow.ai", "NLU", "Voice Synthesis (TTS)", "Speech Recognition (ASR)", "Calendar API"],
+    features: [
+      "Proactive outbound calling and lead engagement with human-like latency.",
+      "Complex, multi-turn dialogue management for detailed information gathering.",
+      "Dynamic response generation and real-time handling of user queries and interruptions.",
+      "Live integration with calendar APIs to check availability and book appointments."
+    ],
+    challenges: [
+      "Achieving low-latency, human-like conversational flow to keep users engaged and prevent hangups.",
+      "Training the NLU model to accurately interpret a wide range of real estate-specific terminology.",
+      "Ensuring robust state management to maintain context throughout a long and complex conversation."
+    ],
+    results: [
+      "Successfully automated the entire lead qualification and appointment scheduling process via voice.",
+      "Demonstrated the ability to handle complex, unscripted conversations effectively.",
+      "Created a fully autonomous agent capable of filling a sales team's calendar with qualified leads 24/7."
+    ],
+    imageUrl: "/cogniworks_calling.png"
   }
 ];
